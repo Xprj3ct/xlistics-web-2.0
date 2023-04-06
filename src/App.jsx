@@ -369,7 +369,7 @@ function App() {
                 className="mt-12 text-[40px] border-2 rounded-xl px-10"
                 id="accordion"
               >
-                <Faq data={data} config={config} id="accordion" />
+                <Faq data={data}  id="accordion" />
               </div>
 
               <div className="flex md:flex-row flex-col items-center justify-end md:gap-7 my-6">
