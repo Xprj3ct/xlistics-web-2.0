@@ -42,18 +42,9 @@ const data = {
 const styles = {
   bgColor: "none",
   Cursor: "pointer"
-  // bgColor: 'white',
-  // titleTextColor: "blue",
-  // rowTitleColor: "blue",
-  // rowContentColor: 'grey',
-  // arrowColor: "red",
 };
 
-const config = {
-  // animate: true,
-  // arrowIcon: "V",
-  // tabFocus: true
-};
+
 
 function App() {
   return (
@@ -99,22 +90,7 @@ function App() {
                   <span className="flex items-center justify-center">
                     <label>Join waitlist</label>
                   </span>
-                  {/* <span className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4 flex items-center justify-center"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </span> */}
+                  
                 </button>
               </a>
             </div>
@@ -128,7 +104,6 @@ function App() {
                   htmlFor="my-modal-3"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
                 >
-                  ✕
                 </label>
                 <h3 className="text-lg font-bold">
                   Congratulations random Internet user!
@@ -171,7 +146,7 @@ function App() {
               />{" "}  Services</span>
               
               
-              <span className="text-[red]   ">.</span></span>
+              <span className="text-[red]   ">!</span></span>
             </h1>
 
             <span className="bg-black shadow-5xl w-1.5 md:mt-0 mt-3 shadow-md md:h-32 h-20"></span>
@@ -195,16 +170,7 @@ function App() {
               </div>
             </div>
 
-            {/* <div className="chat chat-start">
-              <div className="chat-image avatar">
-                <div className="w-10 rounded-full">
-                  <img src={man} />
-                </div>
-              </div>
-              <div className="chat-header mt-12">Obi-Wan</div>
-              <div className="chat-bubble">Where are you now!</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div> */}
+          
             <div className="chat chat-end mt-20 md:grid hidden">
               <div className="chat-image avatar">
                 <div className="w-10 rounded-full">
@@ -424,7 +390,6 @@ function App() {
                border-2 border-black py-2 px-4
               ease-out text-black hover:bg-black hover:text-[#fffffe] rounded-md btn-sm md:btn-md flex items-center justify-center capitalize font-semibold transition"
                     >
-                      {/* <label htmlFor="my-modal-3">Join waitlist</label> */}
                       <label>Join waitlist</label>
                     </button>
                   </a>
