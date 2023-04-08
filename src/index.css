@@ -84,7 +84,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 #accordion {
-    background: none imo !important;
+    background: none !important;
 }
 
 
@@ -123,4 +123,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     /* background-repeat: no-repeat !important; */
     background-position: center !important;
     background-size: 200px !important;
+}
+
+#app-loader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
 }

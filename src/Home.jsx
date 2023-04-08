@@ -1,16 +1,15 @@
-import './App.css'
-import logo from '../src/assets/images/logo.png'
-import man from '../src/assets/images/man.jpg'
-import woman from '../src/assets/images/woman.jpg'
-import pin from '../src/assets/images/map-pin.png'
-import splash from '../src/assets/images/splash-screen.png'
-import android from '../src/assets/images/m1.png'
-import ios from '../src/assets/images/m2.png'
+import "./App.css";
+import logo from "../src/assets/images/logo.png";
+import man from "../src/assets/images/man.jpg";
+import woman from "../src/assets/images/woman.jpg";
+import pin from "../src/assets/images/map-pin.png";
+import splash from "../src/assets/images/splash-screen.png";
+import android from "../src/assets/images/m1.png";
+import ios from "../src/assets/images/m2.png";
 import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
 import { FaBars, FaInstagram, FaTwitter } from "react-icons/fa";
 import TypeWriterEffect from "react-typewriter-effect";
-
 
 const data = {
   title: "",
@@ -30,21 +29,21 @@ const data = {
     },
     {
       title: "How will i pay for the services?",
-      content: "Payments for services can be made on the xlistics App and also in hand with courier/proxy",
+      content:
+        "Payments for services can be made on the xlistics App and also in hand with courier/proxy",
     },
     {
       title: "Xlistics reach?",
-      content: "We are not restricted to a pacticular zone or city, base on database and availability of courier/proxy",
+      content:
+        "We are not restricted to a pacticular zone or city, base on database and availability of courier/proxy",
     },
   ],
 };
 
 const styles = {
   bgColor: "none",
-  Cursor: "pointer"
+  Cursor: "pointer",
 };
-
-
 
 function App() {
   return (
@@ -90,7 +89,6 @@ function App() {
                   <span className="flex items-center justify-center">
                     <label>Join waitlist</label>
                   </span>
-                  
                 </button>
               </a>
             </div>
@@ -103,8 +101,7 @@ function App() {
                 <label
                   htmlFor="my-modal-3"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
-                >
-                </label>
+                ></label>
                 <h3 className="text-lg font-bold">
                   Congratulations random Internet user!
                 </h3>
@@ -121,32 +118,35 @@ function App() {
           <div className="flex flex-col w-full items-center justify-start pt-7">
             <h1 className="md:text-6xl text-4xl text-black text-center">
               Easy Living 🚚
-              <br /> With <span className="flex flex-row"> 
-              <span className="flex flex-row gap-4 ">
-                <TypeWriterEffect
-                textStyle={{
-                  color: "purple",
-                  fontWeight: 'medium',
-                }}
-                startDelay={2000}
-                cursorColor="orange"
-                multiText={[
-                  "Logistics",
-                  "Proxy",
-                  "Logistics",
-                  "Proxy",
-                  "Logistics",
-                  "Proxy",
-                  "Logistics",
-                  "Proxy",
-                  "Logistics"
-                ]}
-                multiTextDelay={3000}
-                typeSpeed={200}
-              />{" "}  Services</span>
-              
-              
-              <span className="text-[red]   ">!</span></span>
+              <br /> With{" "}
+              <span className="flex flex-row">
+                <span className="flex flex-row gap-4 ">
+                  <TypeWriterEffect
+                    textStyle={{
+                      color: "purple",
+                      fontWeight: "medium",
+                    }}
+                    startDelay={2000}
+                    cursorColor="orange"
+                    multiText={[
+                      "Logistics",
+                      "Proxy",
+                      "Logistics",
+                      "Proxy",
+                      "Logistics",
+                      "Proxy",
+                      "Logistics",
+                      "Proxy",
+                      "Logistics",
+                    ]}
+                    multiTextDelay={3000}
+                    typeSpeed={200}
+                  />{" "}
+                  Services
+                </span>
+
+                <span className="text-[red]   ">!</span>
+              </span>
             </h1>
 
             <span className="bg-black shadow-5xl w-1.5 md:mt-0 mt-3 shadow-md md:h-32 h-20"></span>
@@ -170,7 +170,6 @@ function App() {
               </div>
             </div>
 
-          
             <div className="chat chat-end mt-20 md:grid hidden">
               <div className="chat-image avatar">
                 <div className="w-10 rounded-full">
@@ -369,7 +368,7 @@ function App() {
                 className="mt-12 text-[40px] border-2 rounded-xl px-10"
                 id="accordion"
               >
-                <Faq data={data}  id="accordion" />
+                <Faq data={data} id="accordion" />
               </div>
 
               <div className="flex md:flex-row flex-col items-center justify-end md:gap-7 my-6">
@@ -417,4 +416,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
